@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <Version>1.0.0</Version>
+    <PackageId>RestSharp.Service</PackageId>
+    <Authors>Reza Ahmadi</Authors>
+    <Description>A service for REST requests.</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="RestSharp" Version="106.13.0" />
+  </ItemGroup>
+
+</Project>
