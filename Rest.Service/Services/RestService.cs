@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 
 namespace RestSharp.Service.Services
 {
-    internal class RestSharpService
+    internal class RestService
     {
         public async Task<IRestResponse> RequestAsync(string url, Method method = Method.GET, RestConfig configs = default)
         {
