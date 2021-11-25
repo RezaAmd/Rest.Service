@@ -42,7 +42,7 @@ namespace RestSharp.Service
                 return default;
             }
         }
-        
+
         public async Task<IRestResponse> RequestAsync(string url, Method method = Method.GET, RestConfig configs = default)
         {
             try
