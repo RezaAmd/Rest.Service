@@ -25,6 +25,17 @@ internal class Program
   }
 }
 ```
+## Configs
+Default request is GET, also you can request on other actions (Post, Put, Delete, ...) e.g.
+```
+    var response = restService.Request("https://google.com", HttpMethod.Post, new()
+    {
+      Authorization = "JWT_TOKEN",
+      Body = object,
+      Headers = new Dictionary<string, string>(),
+      Parameters = new Dictionary<string, string>()
+    });
+```
 ## How to use in Asp.net?
 1- At first, we need config Rest.Service in `startup.cs`:
 ```
@@ -52,15 +63,4 @@ public class HomeController : ControllerBase {
     var response = restService.Request("https://google.com"); // GET Request
   }
 }
-```
-## Configs
-Default request is GET, also you can request on other actions (Post, Put, Delete, ...) e.g.
-```
-    var response = restService.Request("https://google.com", HttpMethod.Post, new()
-    {
-      Authorization = "JWT_TOKEN",
-      Body = object,
-      Headers = new Dictionary<string, string>(),
-      Parameters = new Dictionary<string, string>()
-    });
 ```
