@@ -1,18 +1,44 @@
-# Rest.Service
+# Rest Service
 A .Net service wrapper for RestSharp package for REST request.
-### How to use?
+
+## How to install?
 In .Net Core:
 ```
 Install-Package Rest.Service
 ```
-Use the following namespace.
+
+## Quick start
+For example in c# console:
+```
+  using RestSharp.Service;
+```
+```
+internal class Program
+{
+  private static IRestService restService = new RestService();
+  
+  static void Main(string[] args)
+  {
+    var response = restService.Request("https://google.com");
+      
+    Console.WriteLine(response.StatusCode);
+  }
+}
+```
+## How to use in Asp.net?
+1- At first, we need config Rest.Service in `startup.cs`:
+```
+using RestSharp.Service;
+```
+```
+Services.AddRestServices();
+```
+
+2- Now to use, do the following:
 ```
 using RestSharp;
 using RestSharp.Service.Interfaces;
 ```
-
-You just need to inject the ```IRestService``` interface.
-For example:
 ```
 public class HomeController : ControllerBase {
 
@@ -23,12 +49,18 @@ public class HomeController : ControllerBase {
   
   [HttpGet]
   public IActionResult Index() {
-    var response = restService.Request("google.com");
+    var response = restService.Request("https://google.com"); // GET Request
   }
 }
 ```
-
-Default request is GET, also you can request on other actions e.g.
+## Configs
+Default request is GET, also you can request on other actions (Post, Put, Delete, ...) e.g.
 ```
-    var response = restService.Request("google.com", HttpMethod.Post);
+    var response = restService.Request("https://google.com", HttpMethod.Post, new()
+    {
+      Authorization = "JWT_TOKEN",
+      Body = object,
+      Headers = new Dictionary<string, string>(),
+      Parameters = new Dictionary<string, string>()
+    });
 ```
