@@ -1,8 +1,8 @@
 # Rest Service
 A .Net service wrapper for RestSharp package for REST request.
 
-## How to install?
-In .Net Core:
+## How to use?
+In .Net Core - [NuGet](https://www.nuget.org/packages/Rest.Service):
 ```
 Install-Package Rest.Service
 ```
