@@ -1,5 +1,5 @@
 # Rest Service
-A .Net service wrapper for RestSharp package for REST request.
+A .Net service wrapper for [RestSharp](https://github.com/restsharp/RestSharp) package for REST request.
 
 ## How to use?
 In .Net Core - [NuGet](https://www.nuget.org/packages/Rest.Service):
@@ -24,6 +24,17 @@ internal class Program
     Console.WriteLine(response.StatusCode);
   }
 }
+```
+## Configs
+Default request is GET, also you can request on other actions (Post, Put, Delete, ...) e.g.
+```
+    var response = restService.Request("https://google.com", HttpMethod.Post, new()
+    {
+      Authorization = "JWT_TOKEN",
+      Body = object,
+      Headers = new Dictionary<string, string>(),
+      Parameters = new Dictionary<string, string>()
+    });
 ```
 ## How to use in Asp.net?
 1- At first, we need config Rest.Service in `startup.cs`:
@@ -52,15 +63,4 @@ public class HomeController : ControllerBase {
     var response = restService.Request("https://google.com"); // GET Request
   }
 }
-```
-## Configs
-Default request is GET, also you can request on other actions (Post, Put, Delete, ...) e.g.
-```
-    var response = restService.Request("https://google.com", HttpMethod.Post, new()
-    {
-      Authorization = "JWT_TOKEN",
-      Body = object,
-      Headers = new Dictionary<string, string>(),
-      Parameters = new Dictionary<string, string>()
-    });
 ```
