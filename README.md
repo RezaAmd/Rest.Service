@@ -49,12 +49,18 @@ public class HomeController : ControllerBase {
   
   [HttpGet]
   public IActionResult Index() {
-    var response = restService.Request("google.com");
+    var response = restService.Request("https://google.com"); // GET Request
   }
 }
 ```
 ## Configs
-Default request is GET, also you can request on other actions e.g.
+Default request is GET, also you can request on other actions (Post, Put, Delete, ...) e.g.
 ```
-    var response = restService.Request("google.com", HttpMethod.Post);
+    var response = restService.Request("https://google.com", HttpMethod.Post, new()
+    {
+      Authorization = "JWT_TOKEN",
+      Body = object,
+      Headers = new Dictionary<string, string>(),
+      Parameters = new Dictionary<string, string>()
+    });
 ```
