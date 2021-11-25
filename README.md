@@ -1,5 +1,5 @@
 # Rest Service
-A .Net service wrapper for RestSharp package for REST request.
+A .Net service wrapper for [RestSharp](https://github.com/restsharp/RestSharp) package for REST request.
 
 ## How to use?
 In .Net Core - [NuGet](https://www.nuget.org/packages/Rest.Service):
