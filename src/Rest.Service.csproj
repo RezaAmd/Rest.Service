@@ -4,7 +4,7 @@
     <TargetFramework>net5.0</TargetFramework>
     <ApplicationIcon>restsharp-icon.ico</ApplicationIcon>
     <PackageId>Rest.Service</PackageId>
-    <Version>1.0.2</Version>
+    <Version>1.0.3</Version>
     <Authors>Reza Ahmadi</Authors>
     <Description>A .Net service wrapper for RestSharp package for REST request.</Description>
     <PackageProjectUrl>https://github.com/RezaAmd/Rest.Service</PackageProjectUrl>
@@ -15,7 +15,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Include="restsharp-icon.ico" />
+    <Compile Remove="src\**" />
+    <EmbeddedResource Remove="src\**" />
+    <None Remove="src\**" />
   </ItemGroup>
 
   <ItemGroup>

@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31912.275
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rest.Service", "Rest.Service\Rest.Service.csproj", "{0671A799-4AA0-4C90-A377-4E3EC994EB43}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rest.Service", "src\Rest.Service.csproj", "{0671A799-4AA0-4C90-A377-4E3EC994EB43}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{E9083FD6-0C7B-494A-949F-B67F905B0B5E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -18,6 +20,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0671A799-4AA0-4C90-A377-4E3EC994EB43} = {E9083FD6-0C7B-494A-949F-B67F905B0B5E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5B56EAE9-46D1-43CB-8807-40F4DCE2AA7C}
