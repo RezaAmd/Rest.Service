@@ -4,7 +4,7 @@
     <TargetFramework>net5.0</TargetFramework>
     <ApplicationIcon>favicon.ico</ApplicationIcon>
     <PackageId>Rest.Service</PackageId>
-    <Version>1.0.3</Version>
+    <Version>1.0.4</Version>
     <Authors>Reza Ahmadi</Authors>
     <Description>A .Net service wrapper for RestSharp package for REST request.</Description>
     <PackageProjectUrl>https://github.com/RezaAmd/Rest.Service</PackageProjectUrl>

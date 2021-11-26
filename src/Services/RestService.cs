@@ -1,4 +1,5 @@
-﻿using RestSharp.Service.Models;
+﻿using Rest.Service.Models;
+using RestSharp.Service.Models;
 using System.Text.Json;
 using System.Threading.Tasks;
 
@@ -20,9 +21,10 @@ namespace RestSharp.Service
                         foreach (var header in configs.Headers)
                             request.AddHeader(header.Key, header.Value);
                     request.AddHeader("Content-Type", "application/json");
-                    // Auth
-                    if (!string.IsNullOrEmpty(configs.Authorization))
-                        request.AddHeader("Authorization", "Bearer " + configs.Authorization);
+
+                    // Authorize
+                    if (configs.Authorization != null)
+                        request.AddHeader("Authorization", "Bearer " + configs.Authorization.ToString());
                     #endregion
                     #region Parameter
                     if (configs.Body != null)
@@ -58,8 +60,8 @@ namespace RestSharp.Service
                             request.AddHeader(header.Key, header.Value);
                     request.AddHeader("Content-Type", "application/json");
                     // Auth
-                    if (!string.IsNullOrEmpty(configs.Authorization))
-                        request.AddHeader("Authorization", "Bearer " + configs.Authorization);
+                    if(configs.Authorization != null)
+                        request.AddHeader("Authorization", configs.Authorization.ToString());
                     #endregion
                     #region Parameter
                     if (configs.Body != null)
