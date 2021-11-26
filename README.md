@@ -30,12 +30,17 @@ Default request is GET, also you can request on other actions (Post, Put, Delete
 ```
     var response = restService.Request("https://google.com", HttpMethod.Post, new()
     {
-      Authorization = "JWT_TOKEN",
+      Authorization = new RestBearerAuth("JWT_TOKEN"),
       Body = object,
       Headers = new Dictionary<string, string>(),
       Parameters = new Dictionary<string, string>()
     });
 ```
+Supported authentications:
+`RestBearerAuth("JWT_TOKEN")`
+`RestBasicAuth(username, password)`
+`RestHawkAuth(string authId, string authKey, HawkAlgorithm algorithm = HawkAlgorithm.Sha256)`
+
 ## How to use in Asp.net?
 1- At first, we need config Rest.Service in `startup.cs`:
 ```
