@@ -1,3 +1,4 @@
+[![NuGet](https://img.shields.io/nuget/v/Rest.Service.svg)](https://www.nuget.org/packages/Rest.Service/)
 # Rest Service
 A .Net service wrapper for [RestSharp](https://github.com/restsharp/RestSharp) package for REST request.
 
