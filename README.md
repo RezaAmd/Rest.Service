@@ -1,4 +1,6 @@
 [![NuGet](https://img.shields.io/nuget/v/Rest.Service.svg)](https://www.nuget.org/packages/Rest.Service/)
+[![dotnet v5.0](https://badgen.net/badge/.net/v5.0/purple)](https://docs.microsoft.com/en-us/aspnet/core/release-notes/aspnetcore-5.0?view=aspnetcore-6.0)
+
 # Rest Service
 A dotnet service wrapper for [RestSharp](https://github.com/restsharp/RestSharp) package for REST request.
 
