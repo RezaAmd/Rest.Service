@@ -57,16 +57,19 @@ using RestSharp;
 using RestSharp.Service.Interfaces;
 ```
 ```
-public class HomeController : ControllerBase {
+public class HomeController : ControllerBase
+{
 
   private readonly IRestService restService;
   
-  public HomeController(IRestService _restService) {
+  public HomeController(IRestService _restService)
+  {
     restService = _restService;
   }
   
   [HttpGet]
-  public IActionResult Index() {
+  public IActionResult Index()
+  {
     var response = restService.Request("https://google.com"); // GET Request
   }
 }
