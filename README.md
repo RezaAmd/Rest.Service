@@ -1,8 +1,16 @@
-[![NuGet](https://img.shields.io/nuget/v/Rest.Service.svg)](https://www.nuget.org/packages/Rest.Service/)
-[![dotnet v5.0](https://badgen.net/badge/.net/v5.0/purple)](https://docs.microsoft.com/en-us/aspnet/core/release-notes/aspnetcore-5.0?view=aspnetcore-6.0)
-
-# Rest Service
-A dotnet service wrapper for [RestSharp](https://github.com/restsharp/RestSharp) package for REST request.
+<div align="center">
+  <p>
+    <a href="https://www.nuget.org/packages/Rest.Service/" target="_blank">
+      <img src="https://api.nuget.org/v3-flatcontainer/rest.service/1.0.4/icon" width="100px" />
+    </a>
+  <h1>Rest.Service</h1>
+  </p>
+  <p>
+    <a href="https://www.nuget.org/packages/Rest.Service/" target="_blank"><img src="https://img.shields.io/nuget/v/Rest.Service.svg" alt="NuGet" /></a>
+    <a href="https://docs.microsoft.com/en-us/aspnet/core/release-notes/aspnetcore-5.0" target="_blank"><img src="https://badgen.net/badge/.net/v5.0/purple"/></a>
+  </p>
+  <p>Dotnet service wrapper for <a href="https://github.com/restsharp/RestSharp"> RestSharp </a> package for REST request.</p>
+</div>
 
 ## How to use?
 In .Net Core - [NuGet](https://www.nuget.org/packages/Rest.Service):
