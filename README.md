@@ -60,6 +60,7 @@ using RestSharp.Service.Interfaces;
 public class HomeController : ControllerBase {
 
   private readonly IRestService restService;
+  
   public HomeController(IRestService _restService) {
     restService = _restService;
   }
