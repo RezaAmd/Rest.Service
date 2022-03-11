@@ -8,6 +8,7 @@
   <p>
     <a href="https://www.nuget.org/packages/Rest.Service/" target="_blank"><img src="https://img.shields.io/nuget/v/Rest.Service.svg" alt="NuGet" /></a>
     <a href="https://docs.microsoft.com/en-us/aspnet/core/release-notes/aspnetcore-5.0" target="_blank"><img src="https://badgen.net/badge/.net/v5.0/purple"/></a>
+    <a href="https://www.nuget.org/packages/Rest.Service" target="_blank"><img src="https://img.shields.io/nuget/dt/Rest.Service"/></a>
     <a href="https://github.com/ellerbrock/open-source-badges" target="_blank"><img src="https://badges.frapsoft.com/os/v1/open-source.svg?v=103"/></a>
   </p>
   <p>Dotnet service wrapper for <a href="https://github.com/restsharp/RestSharp"> RestSharp </a> package for REST request.</p>
