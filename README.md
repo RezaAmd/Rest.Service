@@ -27,9 +27,9 @@ For example in c# console:
 ```
 internal class Program
 {
-  private static IRestService restService = new RestService();
+  private IRestService restService = new RestService();
   
-  static void Main(string[] args)
+  void Main(string[] args)
   {
     var response = restService.Request("https://google.com");
       
